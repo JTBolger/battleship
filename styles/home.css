@@ -1,0 +1,365 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+/* #cursor {
+    width: .5em;
+    height: .5em;
+    position: absolute;
+    background-color: white;
+    transform: translate(-400%, 0%);
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    cursor: none;
+} */
+
+.main {
+    width: 100%;
+    height: 100%;
+    /* background-color: rgb(221, 221, 221); */
+    z-index: 1;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+#menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 3s;
+}
+#menu img {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#title {
+    height: 80%;
+    width: 30rem;
+    /* background-color: rgba(179, 179, 179, 0.637); */
+    display: flex;
+    justify-content: center;
+    border-radius: 30px;
+}
+#button {
+    width: 10rem;
+    height: 10rem;
+    cursor: pointer;
+}
+
+#board {
+    position: absolute;
+    margin-top: -100rem;
+    transition: 3s;
+    width: 40rem;
+    height: 40rem;
+    background-color: rgba(179, 179, 179, 0.637);
+}
+.lines {
+    position: absolute;
+    left: 4rem;
+    top: 4rem;
+}
+.lines :nth-child(1) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 2.5rem;
+}
+.lines :nth-child(2) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 5.5rem;
+}
+.lines :nth-child(3) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 8.5rem;
+}
+.lines :nth-child(4) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 11.5rem;
+}
+.lines :nth-child(5) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 14.5rem;
+}
+.lines :nth-child(6) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 17.5rem;
+}
+.lines :nth-child(7) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 20.5rem;
+}
+.lines :nth-child(8) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 23.5rem;
+}
+.lines :nth-child(9) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 26.5rem;
+}
+.lines :nth-child(10) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 29.5rem;
+}
+.lines :nth-child(11) {
+    position: absolute;
+    width: 32.5rem;
+    height: 2.5px;
+    background-color: white;
+    margin-top: 32.5rem;
+}
+.lines :nth-child(12) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 2.5rem;
+}
+.lines :nth-child(13) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 5.5rem;
+}
+.lines :nth-child(14) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 8.5rem;
+}
+.lines :nth-child(15) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 11.5rem;
+}
+.lines :nth-child(16) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 14.5rem;
+}
+.lines :nth-child(17) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 17.5rem;
+}
+.lines :nth-child(18) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 20.5rem;
+}
+.lines :nth-child(19) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 23.5rem;
+}
+.lines :nth-child(20) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 26.5rem;
+}
+.lines :nth-child(21) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 29.5rem;
+}
+.lines :nth-child(22) {
+    position: absolute;
+    width: 2.5px;
+    height: 32.5rem;
+    background-color: white;
+    margin-left: 32.5rem;
+}
+.letters {
+    width: 3rem;
+    height: 30rem;
+    margin-left: 3.5rem;
+    margin-top: 6.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+}
+.letters div {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 3rem;
+    height: 3rem;
+    color: #698db8;
+    font-size: 2rem;
+    text-shadow: 3px 3px #34425575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+}
+.numbers {
+    width: 30rem;
+    height: 3rem;
+    margin-left: 6.5rem;
+    margin-top: 3.5rem;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+.numbers div {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 3rem;
+    height: 3rem;
+    color: #698db8;
+    font-size: 2rem;
+    text-shadow: 3px 3px #34425575;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: bold;
+}
+
+#bg-anim {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 0;
+    background-color: rgb(221, 221, 221);
+}
+.shapes {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.shapes li{
+    font-family: "arial black";
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: #3164ff8c;
+    animation: animateBG 25s linear infinite;
+    color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    text-align: center; 
+    z-index: 1;
+    top: -25%;
+}
+.shapes li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+.shapes li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+.shapes li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+.shapes li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+.shapes li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+.shapes li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+.shapes li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+@keyframes animateBG {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 0;
+    }
+    30%{
+        color: rgba(0, 0, 0, 0);
+        background-color: #3164ff8c;
+    }
+    40%{
+        color:black;
+    }
+    50% {
+        background-color: #FF10428c;
+    }
+    60% {
+        color:rgba(0, 0, 0, 0);
+    }
+
+    100%{
+        transform: translateY(1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 50%;
+        background-color: #3164ff8c;
+    }
+
+}
